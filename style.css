@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --title: #750a0a;
+    --light-background: #F0F0F0;
+}
+
+body{
+    background-color: var(--light-background);
+}
+
+h1,h2,h3{
+    color: var(--title);
+    margin-top: 1rem;
+}
+
+header div#background-image{
+    background-image: url("./assets/torta_morango.jpg"); 
+    max-width: 100vw;
+    height: 75vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: .4;
+}
+
+header h1{
+    position: absolute;
+    top: 30.5vh;
+    width: 100vw;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+main{
+    width: 75vw;
+    margin-inline: auto;
+    padding: 3rem;
+    background-color: #fff;
+    text-align: justify;
+    border-radius: 3rem;
+}
+
+ol li ol{
+    padding: 0 0 0 3rem;
+}
+
+footer{
+    background-color: var(--light-background);
+    width: 100vw;
+    height: 2rem;
+    font-size: .5em;
+    text-align: center;
+    padding: .5rem;
+}
+
+
