@@ -11,9 +11,6 @@
     --light-background: #F0F0F0;
 }
 
-body{
-    background-color: var(--light-background);
-}
 
 h1,h2,h3{
     color: var(--title);
@@ -22,9 +19,9 @@ h1,h2,h3{
 
 header div#background-image{
     background-image: url("./assets/torta_morango.jpg"); 
-    max-width: 100vw;
+    width: 100vw;
     height: 75vh;
-    background-size: 100% 100%;
+    background-size: 100% contain;
     background-repeat: no-repeat;
     opacity: .4;
 }
@@ -35,17 +32,15 @@ header h1{
     width: 100vw;
     font-family: 'Abril Fatface', cursive;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
 }
 
 main{
-    width: 75vw;
-    margin-inline: auto;
+    width: 100vw;
     padding: 3rem;
     background-color: #fff;
     text-align: justify;
-    border-radius: 3rem;
 }
 
 ol li ol{
@@ -61,4 +56,43 @@ footer{
     padding: .5rem;
 }
 
+footer span{
+    color: var(--title);
+}
 
+footer a{
+    color: inherit;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    cursor: pointer;
+}
+
+footer a img{
+    height: 75%;
+}
+
+@media(min-width: 768px){
+    body{
+        background-color: var(--light-background);
+    }
+
+    header div#background-image{
+        background-size: 100% 120%;
+    }
+
+    header h1{
+        font-size: 3em;
+    }
+
+    main{
+        width: 75vw;
+        margin-inline: auto;
+        padding: 3rem;
+        background-color: #fff;
+        text-align: justify;
+        border-radius: 3rem;
+    }
+
+}
