@@ -7,6 +7,7 @@ Desafio de html5 e CSS3 de nível básico proposto pela plataforma da Rocketseat
 * CSS3;
 * @media (para responsividade).
 
+![mobile version](P-gina-de-Receita/screen/mobile.png)
 
 
 
